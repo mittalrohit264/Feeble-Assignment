@@ -1,0 +1,141 @@
+.content-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 670px;
+    gap: 24px;
+    margin-top: 70px;
+}
+
+.title {
+    font-family: 'General Sans';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #1D2026;
+}
+
+.color-blue {
+    color: #007AFF;
+}
+
+.subtitle {
+    font-family: General Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    text-align: center;
+    color: black;
+}
+
+.banner {
+    height: 28px;
+    opacity: 1;
+    border-radius: 200px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.banner-logo {
+    width: 32px;
+    height: 17px;
+    border-radius: 185.79px;
+    background: #007AFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.eclipse {
+    width: 3.3px;
+    height: 3.3px;
+    background: #ffffff;
+    border-radius: 100%;
+}
+
+.banner-text {
+    font-family: General Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #006FE8;
+}
+
+.btn-conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.small-bird1 {
+    position: absolute;
+    top: 36%;
+    left: 15%;
+}
+
+.small-bird2 {
+    position: absolute;
+    top: 43%;
+    left: 28%;
+}
+
+.small-bird3 {
+    position: absolute;
+    top: 68%;
+    right: 22%;
+}
+
+.small-bird4 {
+    position: absolute;
+    top: 39%;
+    right: 25%;
+}
+
+.small-bird5 {
+   position: absolute;
+    top: 43%;
+    left: 28%;
+    opacity: 0.3;
+}
+
+.small-bird1,
+.small-bird4,
+.small-bird5 {
+  animation: bird-slide-up 1.5s ease-out forwards;
+}
+
+
+@keyframes bird-slide-up {
+  from {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

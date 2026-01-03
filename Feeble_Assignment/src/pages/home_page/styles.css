@@ -1,0 +1,59 @@
+.background-eclipse {
+    position: absolute;
+    width: 471px;
+    height: 441px;
+    top: -228.76px;
+    left: -165.47px;
+    background: radial-gradient(circle, #FFFFFFB2 30%, rgba(230, 242, 255, 1) 70%);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.flying-bird1 {
+    position: fixed;
+    top: 60%;
+    left: -300px;
+    animation: fly-diagonal 4s ease-out forwards;
+    animation-delay: 3s;
+}
+
+.flying-bird2 {
+    transform: scaleX(-1);
+    position: fixed;
+    top: 70%;
+    right: -300px;
+    animation: fly-diagonal-right 4s ease-out forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fly-diagonal {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(130vw, -40vh) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fly-diagonal-right {
+  0% {
+    transform: translate(0, 0) scale(1) scaleX(-1);
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-130vw, -35vh) scale(1) scaleX(-1);
+    opacity: 1;
+  }
+}

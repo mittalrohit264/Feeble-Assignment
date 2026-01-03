@@ -1,0 +1,110 @@
+.footer-container {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    animation: cloud-slide-up 1.0s ease-out forwards;
+}
+
+.cloud-image {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    animation: cloud-slide-up 1.0s ease-out forwards;
+}
+
+@keyframes cloud-slide-up {
+    from {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.blender {
+    width: 100%;
+    height: 100%;
+    background: #e6f2ff;
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+}
+
+.learn-more-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 60%;
+    left: 46%;
+}
+
+.learn-more-text {
+    font-family: General Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #1D2026;
+}
+
+.bird-image1 {
+    position: absolute;
+    left: 20%;
+    top: 55%;
+}
+
+.bird-image2 {
+    position: absolute;
+    left: 82%;
+    top: 50%;
+}
+
+.bird-image3 {
+    position: absolute;
+    left: 36%;
+    top: 39%;
+}
+
+.bird-image4 {
+    position: absolute;
+    left: 65%;
+    top: 60%;
+}
+
+.bird-image1,
+.bird-image2,
+.bird-image3,
+.bird-image4 {
+    animation: bird-slide-up 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes bird-slide-up {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
